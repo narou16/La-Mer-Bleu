@@ -30,6 +30,10 @@ p{
    
     
 }
+#note{
+    font-family :Georgia, serif;
+font-size :3.0em;}
+}
 .pre img{
     width: 505px;
     height: 300px;
