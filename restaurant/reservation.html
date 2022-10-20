@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+     <title>résérvation</title>
+     <script> 
+            function evoi(){
+                
+                document.writeln("<h1><stong>404</strong>error not found</h1>");
+            }
+    </script>
+    </head>
+    <body>
+        <h1 id="d1">réservez une table</h1>
+        <form action="reservation.html">
+            <fieldset>
+                <legend>réserver une table</legend>
+                 <label for="numinput">entrez votre numéro de théléphone</label>
+                 <input type="tel" name="num" id="numinput"  onselect="alert('texte selectionne')" required><br>
+                 <label for="nominput">donnez votre nom</label>
+                 <input type="text" name="nom" id="nominput" required><br>
+                 donnez la durée de reésérvation <input type="number" name="durée" id="duréeinput" required><br>
+                 donnez l'heure de résérvation <input type="time" name="temps" id="tempsinput" required><br>
+                 <label for="dateinput">donnez la date de résérvation</label>
+                 <input type="date" name="date" id="dateinput"><br>
+                 <label>choisissez l'étage</label>
+                 <select id="se">
+                    
+                   <option name="choix"  value="1er étage">1er étage</option>
+                    <option name="choix" value="rez de chaussé">rez-de-chaussé</option>
+                    <option name="choix" value="terasse">terasse</option>
+                 </select><br>
+
+                 <label>sexe</label>
+                  <div>
+                     <input type="radio" name="sexe" id="masculin">
+                     <label for="masculin">homme</label>
+
+                  </div>
+                  <div>
+                      <input type="radio" name="sexe" id="feminin">femme
+                      
+                  </div>
+                  <input type="button" value="ajouter" onclick="ajouter()">
+                  <script>
+                    function ajouter(){
+                        document.write(document.getElementById("d1").innerHTML);
+                    }
+                  </script>
+                  <label><input type="submit" value="envoyer la résérvation " onclick="evoi()" ></label>
+
+
+            </fieldset><br>
+            <a href="restaurent.html">revenir a la page d'acceuil</a>
+
+
+
+
+
+        </form>
+
+    </body>
+</html>
